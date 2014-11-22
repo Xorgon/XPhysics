@@ -1,25 +1,18 @@
 import Mechanics.Velocity;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * Main class.
  */
-public class XPhysics extends JavaPlugin {
+public class XPhysics {
 
     private static XPhysics instance;
     private Velocity velocity;
 
-
-    @Override
-    public void onEnable(){
-        velocity = new Velocity();
-        Bukkit.getPluginManager().registerEvents(new XPListeners(this, velocity),this);
-    }
-
-    @Override
-    public void onDisable(){
-
+    public void XPhysics(Plugin plugin) {
+        plugin.getServer().getPluginManager().registerEvents(new XPListeners(this, velocity), plugin);
     }
 
     public static XPhysics getInstance() {
