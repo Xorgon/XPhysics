@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.bukkit:bukkit:1.7.9-R0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bukkit/Bukkit/1.7.9-R0.1-SNAPSHOT/bukkit-1.7.9-R0.1-20140514.121658-11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="http://jd.bukkit.org/dev/apidocs/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bukkit/Bukkit/1.7.9-R0.1-SNAPSHOT/bukkit-1.7.9-R0.1-20140514.121658-11.jar!/" />
+    </SOURCES>
+  </library>
+</component>
