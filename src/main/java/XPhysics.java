@@ -8,14 +8,14 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class XPhysics {
 
-    private static XPhysics instance;
+    private XPhysics instance = this;
     private Velocity velocity;
 
     public void XPhysics(Plugin plugin) {
         plugin.getServer().getPluginManager().registerEvents(new XPListeners(this, velocity), plugin);
     }
 
-    public static XPhysics getInstance() {
+    public XPhysics getInstance() {
         return instance;
     }
 }
